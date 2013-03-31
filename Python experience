@@ -1,0 +1,27 @@
+first_name = input('What is your first name: ')
+last_name = input('What is your last name: ')
+
+def _full_name (first_name, last_name):
+    return first_name + ' ' + last_name
+
+
+def _title (first_name, last_name):
+    return 'Mr.' + ' ' + _full_name(first_name, last_name)
+
+print(_title (first_name, last_name))
+
+import datetime
+now = datetime.datetime.now()
+file_name = str(now.year) + '_' + str(now.month)
+print(file_name)
+
+
+number_of_hours = input('Input the number of hours: ')
+
+def _to_min (number_of_hours):
+    return int(number_of_hours)*60
+print (_to_min (number_of_hours))
+
+def _to_sec (number_of_hours):
+    return _to_min (number_of_hours)*60
+print (_to_sec (number_of_hours))
