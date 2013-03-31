@@ -1,20 +1,22 @@
+#How to use input as function arguments:
+
 first_name = input('What is your first name: ')
 last_name = input('What is your last name: ')
 
 def _full_name (first_name, last_name):
     return first_name + ' ' + last_name
 
-
 def _title (first_name, last_name):
     return 'Mr.' + ' ' + _full_name(first_name, last_name)
 
 print(_title (first_name, last_name))
 
+#How to use datetime (partly):
+
 import datetime
 now = datetime.datetime.now()
-file_name = str(now.year) + '_' + str(now.month)
-print(file_name)
 
+#How to reuse functions:
 
 number_of_hours = input('Input the number of hours: ')
 
