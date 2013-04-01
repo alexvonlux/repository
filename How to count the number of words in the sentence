@@ -1,0 +1,5 @@
+import string
+s = input()
+total = len(s.split())
+print ('Total words: ', total)
+
