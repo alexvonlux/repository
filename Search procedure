@@ -5,6 +5,7 @@ def search(list, element):
         if e == element: 
             return True
     return False
+
 The recursive way:
 
 def rSearch(list,element):
@@ -13,6 +14,7 @@ def rSearch(list,element):
     if len(list) == 1:
         return False
     return rSearch(list[1:],element)
+
 A recursive "Pythonic" binary search procedure:
 
 def rBinarySearch(list,element):
